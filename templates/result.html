@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommended Jobs</title>
+</head>
+<body>
+    <h1>Recommended Jobs</h1>
+    <table border="1">
+        <tr>
+            <th>Job ID</th>
+            <th>Company</th>
+            <th>Title</th>
+            <th>Skill match</th>
+            <th>Action</th>
+        </tr>
+        {% for job in jobs %}
+        <tr>
+            <td>{{ job['Job Id'] }}</td>
+            <td>{{ job['Company'] }}</td>
+            <td>{{ job['Job Title'] }}</td>
+            <td>{{ "%.0f" % (job['similarity_score'] * 100) }}%</td>
+            <td>
+                <a href="{{ job['Link'] }}" target="_blank">
+                    <button>View Job</button>
+                </a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
