@@ -43,8 +43,10 @@ make sure the dataset is in the above format and the dataset is stored in the sa
 
 ## HOW THE CODE WORKS: ##
 
-1. Gets the student details
+1. The user submits their information through the form on the index.html page.
 
-2. Finds the similarity score between the skills using TF-IDF VECTORIZER and cosine similarity
+2. The backend (app.py) processes the form data, calculates similarity scores using the TF-IDF algorithm, and checks the experience matching.
 
-3. Displays the recommended jobs based on the similarity score and the conditions that satisfies the company's requirements  
+3. The backend filters and sorts the recommended jobs and passes the data to the result.html template.
+
+4. The result page displays the recommended jobs in a table, each with a "View Job" button that, when clicked, navigates to the job's URL in a new tab.
