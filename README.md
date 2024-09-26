@@ -22,13 +22,13 @@ make sure the dataset is in the above format and the dataset is stored in the sa
 2.Make sure you have all the contents in the directory as follows:
 
 > /flask_app/
-│
-├── /templates/
-│   ├── index.html
-│   └── result.html
-│
-├── app.py
-└── job_descriptions.xlsx
+> │
+> ├── /templates/
+> │   ├── index.html
+> │   └── result.html
+> │
+> ├── app.py
+> └── job_descriptions.xlsx
 
 
 3. Run the app.py file
