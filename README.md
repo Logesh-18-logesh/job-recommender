@@ -27,9 +27,9 @@ make sure the dataset is in the above format and the dataset is stored in the sa
   
   > ├── /templates/
   
-  > │   ├── index.html
+  > │    ├── index.html
   
-  > │   └── result.html
+  > │    └── result.html
   
   > │
   
