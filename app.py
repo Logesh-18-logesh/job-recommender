@@ -7,7 +7,7 @@ import re
 app = Flask(__name__)
 
 # Load job data from Excel file
-df = pd.read_excel(r"D:\websort\sorting\job_descriptions.xlsx")
+df = pd.read_excel(r"D:\websort\sorting\job_descriptions.xlsx") #add the path of the dataset downloaded from the kaggle 
 
 # Helper function to parse experience range
 def parse_experience_range(exp_str):
